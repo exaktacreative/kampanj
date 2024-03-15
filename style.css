@@ -4,6 +4,7 @@ body, html {
     box-sizing: border-box;
     font-family: 'Manrope', sans-serif;
     font-size: 16px; /* Default */    
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -11,7 +12,7 @@ body, html {
     flex-wrap: wrap;
     text-align: center;
     align-items: center; /* Centers children vertically */
-    height: 100vh; /* Make container full viewport height */
+    height: 80vh; /* Make container full viewport height */
 }
 
 .image-section, .text-section {
@@ -23,7 +24,7 @@ body, html {
     justify-content: center;
     align-items: center; /* Center content vertically */
     flex-direction: column; /* Stack image and text vertically */
-    height: 100vh; /* Adjust based on your needs */
+    height: 80vh; /* Adjust based on your needs */
 }
 
 .image-section img {
@@ -46,7 +47,7 @@ p, li, a {
     font-family: 'Manrope', sans-serif;
     font-weight: 400; /* Justera vikten efter behov, t.ex. 700 för fetstil */
     font-size: 1rem; /* Equal to 32px */
-    background-color: #F46103; /* En levande orange färg */
+    background-color: #F59E2D; /* En levande orange färg */
     color: white; /* Vit text */
     padding: 10px 20px; /* Top/bottom och left/right padding */
     border: none; /* Inga kanter */
@@ -57,6 +58,11 @@ p, li, a {
 
 .button:hover {
     background-color: #e67e22; /* En mörkare nyans av orange för hover-effekt */
+}
+
+.form {
+    width: 100%;
+    margin-bottom: 20vh;
 }
 
 
