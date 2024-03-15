@@ -1,0 +1,71 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px; /* Default */    
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center; /* Centers children vertically */
+    height: 100vh; /* Make container full viewport height */
+}
+
+.image-section, .text-section {
+    box-sizing: border-box; /* Include padding in the element's total width */
+    flex: 1;
+    padding: 2rem; /* Your padding */
+    min-width: 300px; /* Minimum width before wrapping */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center content vertically */
+    flex-direction: column; /* Stack image and text vertically */
+    height: 100vh; /* Adjust based on your needs */
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700; /* Använder den feta varianten */
+    font-size: 2rem; /* Equal to 32px */
+}
+
+p, li, a {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400; /* Använder den normala varianten */
+}
+
+.button {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400; /* Justera vikten efter behov, t.ex. 700 för fetstil */
+    font-size: 1rem; /* Equal to 32px */
+    background-color: #F46103; /* En levande orange färg */
+    color: white; /* Vit text */
+    padding: 10px 20px; /* Top/bottom och left/right padding */
+    border: none; /* Inga kanter */
+    border-radius: 5px; /* Rundade hörn */
+    cursor: pointer; /* Ändra muspekaren till en pekare när den hovrar över knappen */
+    transition: background-color 0.3s ease; /* Smidig övergång för bakgrundsfärg */
+}
+
+.button:hover {
+    background-color: #e67e22; /* En mörkare nyans av orange för hover-effekt */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .image-section, .text-section {
+        height: 50vh; /* Adjust based on your needs */
+    }
+}
